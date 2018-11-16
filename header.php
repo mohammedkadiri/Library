@@ -7,21 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
-  <body class="index-bg">
+  <body>
 
- <main>
-
-   <h1>hidden leaf library</h1>
-
-   <div id="form-container">
-
-     </div>
-
-
-   <p>You are logged in!</p>
-   <p>You are logged out!</p>
- </main>
-
- <?php
-    require "footer.php"
-  ?>
+<?php
+  require "navbar.php"
+?>

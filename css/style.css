@@ -1,0 +1,22 @@
+.index-bg {
+  background-image: url("../images/lib1.jpg");
+}
+
+h1 {
+  color: #dcdcdc;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bookman"
+}
+
+#form-container{
+  background-color: #3f3f3f;
+  filter:alpha(opacity=70);
+  -moz-opacity:.70;
+   opacity: .70;
+   width: 45%;
+   height: 500px;
+   margin-top:10%;
+   margin-left: auto;
+   margin-right: auto;
+}
