@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -25,3 +26,16 @@
  <?php
     require "footer.php"
   ?>
+=======
+  <html>
+    <head>
+    </head>
+    <body>
+      <nav>
+        <form action="#" method="post">
+          <input type="t" name="" value="">
+        </form>
+      </nav>
+    </body>
+  </html>
+>>>>>>> 82c734b2726c72ae7f7d987e806fe8d7818d2e30
