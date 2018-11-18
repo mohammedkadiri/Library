@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" >
   <head>
     <meta charset="utf-8">
     <meta name="description" content="This is a library website">
@@ -10,5 +10,5 @@
   <body>
 
 <?php
-  require "navbar.php"
+  require "footer.php;
 ?>
