@@ -1,5 +1,5 @@
 
-#index-bg {
+.index-bg {
   background-color:#F1FED3;
 }
 
@@ -15,7 +15,7 @@ h1 {
 
 }
 
-#book-container{
+.book-container{
   position: relative;
    margin-top: 3%;
    width: 55%;
@@ -54,18 +54,17 @@ h3 {
 }
 
 .login-form form {
-  padding-top: 10%;
-  height:70%;
-  width:70%;
+  margin-top: 32%;
+  height:80%;
+  width:90%;
 }
 
 .login-form button{
-  margin-top: 14%;
+  margin-top: 10%;
   margin-left: 10%;
   width:100px;
   height: 40px;
   background-color: tomato;
-  outline:none;
   border:none;
   color:white;
   border-radius: 20px;
@@ -84,20 +83,21 @@ h3 {
 }
 
 .login-form input[type=text],
-.login-form input[type=password] {
+.login-form input[type=password],
+.login-form input[type=number]{
   border: none;
   border-bottom: 1px solid #ffffff;
   background-color: transparent;
   outline: none;
   height: 40px;
-  color: #e5f4f9;
-  display: 16px;
+  color:yellow;
+  display: 10px;
   width: 80%;
   margin-left: 10%;
 }
 
 .login-form input:focus {
-    color:#8dc6d9;
+    color:white;
     border-color: #016392;
 }
 
@@ -116,7 +116,7 @@ h3 {
 
 .signup-link {
   left:70%;
-  top:53%;
+  top:88%;
   position: absolute;
   width:90px;
   height:20px;
@@ -156,7 +156,7 @@ h3 {
 }
 
 .phoneix {
-  margin-top: 20%;
+  margin-top: 27%;
   margin-left: 10%;
 }
 

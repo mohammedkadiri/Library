@@ -16,15 +16,17 @@
         <div class="login-form">
           <h3>Login</h3>
           <form action="#" method="post">
-            <p>Username</p>
-            <input type="text" name="uid" placeholder="username">
-            <br>
-            <p>Password</p>
-            <input type="password" name="pwd" placeholder="password">
-            <br>
-            <button type="submit" name="login-submit">Sign In</button>
+            <input type="text" name="uid" placeholder="Username">
+            <input type="password" name="pwd" placeholder="Password">
+            <input type="text" name="fname" placeholder="Frstname">
+            <input type="text" name="lname" placeholder="Lastname">
+            <input type="text" name="address" placeholder="Address">
+            <input type="text" name="city" placeholder="City">
+            <input type="number" name="mobile" placeholder="mobile">
+            <input type="number" name="telephone" placeholder="telephone">
+            <button type="submit" name="signup-submit">Sign Up</button>
           </form>
-          <a href="signup.php" class="signup-link">Sign Up &rarr;</a>
+          <a href="index.php" class="signup-link">Sign In&rarr;</a>
         </div>
         <div class="form-container">
             <img src="images/mix.png"  alt="books">
