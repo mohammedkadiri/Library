@@ -1,7 +1,5 @@
 <footer>
   <div id="contact-form">
-
-
       <form action="#" method="post" class="message-form">
         <input type="text" name="" placeholder="Name" class="message-inputs">
         <input type="email" name="" placeholder="Email" class="message-inputs">
