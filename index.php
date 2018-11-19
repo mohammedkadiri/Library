@@ -14,7 +14,7 @@
           <img src="images/books.jpg" alt="books">
         </div>
         <div class="login-form">
-          <h2>Login</h2>
+          <h3>Login</h3>
           <form action="#" method="post">
             <p>Username</p>
             <input type="text" name="uid" placeholder="username">
@@ -22,8 +22,9 @@
             <p>Password</p>
             <input type="password" name="pwd" placeholder="password">
             <br>
-            <button type="submit" name="login-submit">Sign in</button>
+            <button type="submit" name="login-submit">Sign In</button>
           </form>
+          <a href="#" class="signup-link">Sign Up &rarr;</a>
         </div>
         <div class="form-container">
             <img src="images/mix.png"  alt="books">
