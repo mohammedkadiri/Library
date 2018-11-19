@@ -2,18 +2,15 @@
   <div id="contact-form">
 
 
-      <form action="#" method="post">
-        <input type="text" name="" placeholder="Name">
-        <br>
-        <input type="email" name="" placeholder="Email">
-        <br>
-        <input type="number" name="" placeholder="Telephone">
-        <br>
+      <form action="#" method="post" class="message-form">
+        <input type="text" name="" placeholder="Name" class="message-inputs">
+        <input type="email" name="" placeholder="Email" class="message-inputs">
+        <input type="number" name="" placeholder="Telephone" class="message-inputs">
         <textarea name="name" rows="8" cols="80" placeholder="Comment"></textarea>
         <br>
-        <button type="button" name="button">SUBMIT</button>
+        <button type="button" name="button" class="submit-btn">SUBMIT</button>
       </form>
-
+            <p class="copyright">&copy; All rights reserved.</p>
   </div>
 </footer>
 
