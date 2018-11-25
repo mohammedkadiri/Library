@@ -15,16 +15,18 @@
         </div>
         <div class="login-form">
           <h3>Login</h3>
-          <form action="#" method="post">
+          <form action="includes/signup.inc.php" method="post">
             <input type="text" name="uid" placeholder="Username">
             <input type="password" name="pwd" placeholder="Password">
+            <input type="password" name="pwd-repeat" placeholder="Repeat Password">
             <input type="text" name="fname" placeholder="Frstname">
             <input type="text" name="lname" placeholder="Lastname">
-            <input type="text" name="address" placeholder="Address">
+            <input type="text" name="strname" placeholder="Address">
+            <input type="text" name="area" placeholder="Town">
             <input type="text" name="city" placeholder="City">
             <input type="number" name="mobile" placeholder="mobile">
             <input type="number" name="telephone" placeholder="telephone">
-            <button type="submit" name="signup-submit">Sign Up</button>
+            <button type="submit" name="signup-submit">SignUp</button>
           </form>
           <a href="index.php" class="signup-link">Sign In&rarr;</a>
         </div>
