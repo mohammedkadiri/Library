@@ -15,11 +15,16 @@
         </div>
         <div class="login-form">
           <h3>Login</h3>
-          <form action="#" method="post">
-            <p>Username</p>
+          <?php
+              if(isset($_GET['error'])) {
+                echo "<p>" .$_GET['error']."</p>";
+              }
+           ?>
+          <form action="includes/login.inc.php" method="post">
+            <p class="titles">Username</p>
             <input type="text" name="uid" placeholder="username">
             <br>
-            <p>Password</p>
+            <p class="titles">Password</p>
             <input type="password" name="pwd" placeholder="password">
             <br>
             <button type="submit" name="login-submit">Sign In</button>
