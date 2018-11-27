@@ -15,6 +15,11 @@
         </div>
         <div class="login-form">
           <h3>Login</h3>
+          <?php
+              if(isset($_GET['error'])) {
+                echo "<p>" .$_GET['error']."</p>";
+              }
+           ?>
           <form action="includes/signup.inc.php" method="post">
             <input type="text" name="uid" placeholder="Username">
             <input type="password" name="pwd" placeholder="Password">
