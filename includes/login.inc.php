@@ -31,7 +31,9 @@
             //   header("Location: ../index.php?error=Incorrect Password!");
             //   exit();
             session_start();
-            $_SESSION['userName'] = $row['Username'];
+            $_SESSION['Username'] = $row['Username'];
+            $_SESSION['Password'] = $row['Password'];
+
 
             header("Location: ../main.php?login=success");
             exit();
@@ -54,7 +56,7 @@
 
   }
   else {
-    header("Location ../index.php");
+    header("Location: ../index.php");
     exit();
   }
  ?>
