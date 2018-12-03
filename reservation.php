@@ -37,10 +37,7 @@
         <?php require 'show.php'; ?>
         </form>
       </div>
-      <div class="display-results">
-        <hr>
-            <?php  if(isset($_GET['browse'])) {include 'search.php';}?>
-      </div>
+  
 
 
 
