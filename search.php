@@ -1,12 +1,12 @@
 <?php
-session_start();
 if (isset($_SESSION['Username']) && isset($_SESSION['Password'])) {
 }
 else {
   header("Location: ./signup.php");
   exit();
 }
-  include 'includes/dbh.inc.php';
+
+include 'includes/dbh.inc.php';
 
   // Retrieve all values from fields
   $values = mysqli_real_escape_string($conn, $_GET['values']);

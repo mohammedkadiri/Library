@@ -26,30 +26,16 @@
         <li><a href="viewReserved.php">ViewReservation</a></li>
       </ul>
     </nav>
+    <br><br><br>
+    <form class="" action="viewReserved.php" method="post">
+          <input type="submit" name="view" value="view reserved">
+      </form>
 
-    <div class="search-view">
-      <div class="search-book">
-        <form class="" action="#" method="get">
-          <select name="search" class="list-book">
-            <option value="book title">By book title</option>
-            <option value="author">By author</option>
-          </select>
-          <input type="text" name="values" value="" class="search-box">
-        </div>
-        <button type="submit" name="browse" class="browse-btn">Browse</button>
-        <?php require 'show.php'; ?>
-        </form>
-      </div>
+
       <div class="display-results">
         <hr>
-            <?php  if(isset($_GET['browse'])) {include 'search.php';}?>
+        <?php include 'includes/viewReserved.inc.php'; ?>
       </div>
-
-
-
-
-
-
 
   </body>
 </html>
