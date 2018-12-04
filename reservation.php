@@ -21,6 +21,9 @@
     <nav class="navbar">
       <ul class="navbar-nav">
         <li><a href="includes/logout.inc.php">Logout</a></li>
+        <li><a href="reservation.php">Reservation</a></li>
+        <li><a href="main.php">Main</a></li>
+        <li><a href="viewReserved.php">ViewReservation</a></li>
       </ul>
     </nav>
 
@@ -28,16 +31,39 @@
       <div class="search-book">
         <form class="" action="#" method="get">
           <select name="search" class="list-book">
-            <option value="book title">By book title</option>
-            <option value="author">By author</option>
+            <option value="isbn">By isbn</option>
           </select>
-          <input type="text" name="values" value="" class="search-box">
+          <?php
+            if (isset($_GET['isbn'])) {
+              echo "<input type='text' name='values' value='". $_GET['isbn']."'class='search-box'>";
+            }
+            else {
+                echo "<input type='text' name='values' value='' class='search-box'>";
+            }
+           ?>
+
         </div>
         <button type="submit" name="browse" class="browse-btn">Browse</button>
-        <?php require 'show.php'; ?>
         </form>
       </div>
-  
+      <div class="display-results">
+        <hr>
+          <?php
+            if(isset($_GET['browse'])) {
+            include 'includes/reservation.inc.php';
+              echo "<br><br>";
+              echo '<form class="" action="#" method="post">
+                    <input type="submit" name="reserve" value="Reserve">
+                    </form>';
+             }?>
+
+
+
+
+
+
+
+      </div>
 
 
 
