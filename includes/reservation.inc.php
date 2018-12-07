@@ -12,8 +12,8 @@
 
   if (isset($values)) {
 
+    // Select the books as well as the category description for each book
     $sql = "SELECT *, CategoryDescription FROM books join category on books.CategoryID = category.CategoryID WHERE ISBN = '$values' ";
-
 
     $result = $conn -> query($sql);
 
@@ -30,15 +30,17 @@
       }
     }
   }
-
+  // If the user clicked the reserve button
   if(isset($_POST['reserve'])) {
     $sql = "SELECT Reservation FROM books WHERE ISBN = '$values' ";
     $result = $conn -> query($sql);
+    // The book has already been reserved
     if ($result -> num_rows > 0) {
       while ($row = $result -> fetch_assoc()) {
           if($row['Reservation'] == 'Y') {
               echo "<br><br>Sorry the book has already been reserved!";
           }
+          // If the book has not been reserved then add the book to reservation
           else{
             $sql = "UPDATE books set Reservation = '$reserve' WHERE ISBN = '$values';";
             $sql .= "INSERT INTO reservations(ISBN, Username, ReservedDate) VALUES ('$values', '$username', '$currentDate')";
@@ -46,9 +48,7 @@
             {
                   echo "<br><br>Book reservation succesfull";
             }
-
           }
-
 
       }
     }

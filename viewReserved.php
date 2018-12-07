@@ -1,3 +1,4 @@
+// Check if the person has logged in else send them back
 <?php
   session_start();
   if (isset($_SESSION['Username']) && isset($_SESSION['Password'])) {
@@ -7,7 +8,6 @@
     exit();
   }
  ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,8 +30,6 @@
     <form class="" action="viewReserved.php" method="post">
           <input type="submit" name="view" value="view reserved">
       </form>
-
-
       <div class="display-results">
         <hr>
         <?php include 'includes/viewReserved.inc.php'; ?>

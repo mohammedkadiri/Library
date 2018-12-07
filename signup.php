@@ -15,6 +15,7 @@
         </div>
         <div class="login-form">
           <h3>Login</h3>
+          <!--Get the error message which was encountered when error checking-->
           <?php
               if(isset($_GET['error'])) {
                 echo "<p>" .$_GET['error']."</p>";

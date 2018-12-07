@@ -5,6 +5,7 @@ include 'dbh.inc.php';
   $username =  $_SESSION['Username'];
   $unreserve = 'N';
 
+  // Display the reserved books and a button to be able to remove a specific book from the reserved books
   if(isset($_POST['view'])) {
     $sql = "SELECT *, BookTitle, Author FROM reservations join books on reservations.ISBN = books.ISBN WHERE Username = '$username' ";
 
@@ -18,7 +19,7 @@ include 'dbh.inc.php';
       }
     }
   }
-
+  // If the user wants to remove a book from the reserved books
   if(isset($_GET['isbn'])) {
       $isbn = $_GET['isbn'];
       $sql = "DELETE FROM reservations WHERE ISBN = '$isbn' AND Username = '$username';";
@@ -29,5 +30,4 @@ include 'dbh.inc.php';
       }
 
   }
-
  ?>

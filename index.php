@@ -15,11 +15,13 @@
         </div>
         <div class="login-form">
           <h3>Login</h3>
+          <!--Get the error message which was encountered when error checking-->
           <?php
               if(isset($_GET['error'])) {
                 echo "<p>" .$_GET['error']."</p>";
               }
            ?>
+           <!--Create a form for the login page and send the value inside the fields to login.inc.php -->
           <form action="includes/login.inc.php" method="post">
             <p class="titles">Username</p>
             <input type="text" name="uid" placeholder="username">
