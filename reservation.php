@@ -1,4 +1,4 @@
-// Start the sessions to check if the user has actually logged in if not then send them back to login
+ <!--Start the sessions to check if the user has actually logged in-->
 <?php
   session_start();
   if (isset($_SESSION['Username']) && isset($_SESSION['Password'])) {

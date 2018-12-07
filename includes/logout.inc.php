@@ -1,4 +1,4 @@
-// Start all the sessions then remove all the sessions variables stored both locally and on the server and redirect the user back to the index page to login
+ <!--Start the sessions to check if the user has actually logged in-->
 <?php
   session_start();
   session_unset();
