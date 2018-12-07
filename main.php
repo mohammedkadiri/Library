@@ -1,3 +1,4 @@
+// Start the sessions to check if the user has actually logged in
 <?php
   session_start();
   if (isset($_SESSION['Username']) && isset($_SESSION['Password'])) {
@@ -26,7 +27,6 @@
         <li><a href="viewReserved.php">ViewReservation</a></li>
       </ul>
     </nav>
-
     <div class="search-view">
       <div class="search-book">
         <form class="" action="#" method="get">
@@ -37,19 +37,14 @@
           <input type="text" name="values" value="" class="search-box">
         </div>
         <button type="submit" name="browse" class="browse-btn">Browse</button>
+        <!--Add the dropdown list from the show.php file-->
         <?php require 'show.php'; ?>
         </form>
       </div>
+      <!-- if the user has clicked they want to view the books by clicking browse -->
       <div class="display-results">
         <hr>
             <?php  if(isset($_GET['browse'])) {include 'search.php';}?>
       </div>
-
-
-
-
-
-
-
   </body>
 </html>

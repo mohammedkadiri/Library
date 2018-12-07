@@ -2,6 +2,7 @@
 
   if (isset($_POST['login-submit'])) {
 
+      // add the connection from the dbh.inc.php
       require 'dbh.inc.php';
 
       // Retrieve all values from fields

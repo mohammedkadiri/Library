@@ -1,3 +1,4 @@
+<!-- a footer to add to each page -->
 <footer>
   <div id="contact-form">
       <form action="#" method="post" class="message-form">

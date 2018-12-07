@@ -1,3 +1,4 @@
+// Start the sessions to check if the user has actually logged in if not then send them back to login
 <?php
   session_start();
   if (isset($_SESSION['Username']) && isset($_SESSION['Password'])) {
@@ -7,7 +8,6 @@
     exit();
   }
  ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,7 +26,6 @@
         <li><a href="viewReserved.php">ViewReservation</a></li>
       </ul>
     </nav>
-
     <div class="search-view">
       <div class="search-book">
         <form class="" action="#" method="get">
@@ -34,14 +33,15 @@
             <option value="isbn">By isbn</option>
           </select>
           <?php
+            // Create an input field which gets the isbn value in the url from the main page if the user clicks the reserve button and then add isbn value inside the field automatically
             if (isset($_GET['isbn'])) {
               echo "<input type='text' name='values' value='". $_GET['isbn']."'class='search-box'>";
             }
+            // Else the user never clicked on reserving a book using the reserve button
             else {
                 echo "<input type='text' name='values' value='' class='search-box'>";
             }
            ?>
-
         </div>
         <button type="submit" name="browse" class="browse-btn">Browse</button>
         </form>
@@ -49,6 +49,7 @@
       <div class="display-results">
         <hr>
           <?php
+          // Add a button after the book has been displayed with the option to reserve that book
             if(isset($_GET['browse'])) {
             include 'includes/reservation.inc.php';
               echo "<br><br>";
@@ -56,20 +57,6 @@
                     <input type="submit" name="reserve" value="Reserve">
                     </form>';
              }?>
-
-
-
-
-
-
-
       </div>
-
-
-
-
-
-
-
   </body>
 </html>
