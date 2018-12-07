@@ -1,4 +1,4 @@
-// Check if the user has logged in else send the user back to login
+ <!--Start the sessions to check if the user has actually logged in-->
 <?php
 if (isset($_SESSION['Username']) && isset($_SESSION['Password'])) {
 }
@@ -27,7 +27,7 @@ include 'includes/dbh.inc.php';
     // Retrieve the rows from the database
     if ($result -> num_rows > 0) {
       echo '<br/> <table><tr><th>ISBN</th><th>BookTitle</th><th>Author</th><th>Edition</th><th>Year</th><th>CategoryDescription</th><th>Reservation</th></tr>';
-      
+
       // Create an associative array from the retrieved rows and use key value pairs to retrieve information from each column in a row
       while ($row = $result -> fetch_assoc()) {
         echo '<tr>'.'<td class="table-list">'.$row['ISBN'].'</td>'.'<td class="table-list">'.$row['BookTitle'].'</td>'.'<td class="table-list">'.$row['Author'].'</td>'

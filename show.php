@@ -1,4 +1,4 @@
-// Create the dropdown list from the category description in the database
+<!-- Create the dropdown list from the category description in the database -->
 <?php
   require_once 'includes/dbh.inc.php';
   echo '<select name="Description">';

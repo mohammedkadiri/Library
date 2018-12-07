@@ -1,4 +1,4 @@
-// Check if the person has logged in else send them back
+ <!--Start the sessions to check if the user has actually logged in-->
 <?php
   session_start();
   if (isset($_SESSION['Username']) && isset($_SESSION['Password'])) {
